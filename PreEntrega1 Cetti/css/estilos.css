@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Major+Mono+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logoIdear {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    padding: auto;
+    margin: auto;
+    align-self: center;
+}
+
+
+body {
+    background-color: #f1ab86;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2-.01C18 4.235 20.244 2 23 2c2.76 0 5 2.236 5 4.995v10.01C28 19.765 25.756 22 23 22c-2.76 0-5-2.236-5-4.995V6.995z' fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    font-family: "M PLUS Code Latin", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.container {
+    display: block;
+    width: 120rem;
+    max-width: 95vw;
+    margin: 0 auto;
+
+}
+
+.quienesSomos {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "section1 aside1"
+        "section2 aside2"
+}
+
+
+
+.section1 {
+    grid-area: section1;
+
+}
+
+.aside1 {
+    grid-area: aside1;
+
+}
+
+.section2 {
+    grid-area: section2;
+}
+
+.aside2 {
+    grid-area: aside2;
+}
+
+
+.header {
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    grid-area: header;
+}
+
+
+
+
+.navFlex {
+    border: solid 5px black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    align-items: center;
+}
+
+.ulNavFlex {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    column-gap: 16px;
+    padding-left: 0;
+    margin-bottom: 0;
+
+}
+
+
+
+.mainFlex {
+    display: flex;
+    margin-top: 20px;
+    padding: 25px;
+    list-style: none;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(0, 0, 0) 5px;
+    border-radius: 10px;
+
+}
+
+
+.gridContent {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border: solid black 5px;
+    border-radius: 10px;
+}
+
+.carousel {
+    border: solid black 5px;
+    border-radius: 10px;
+}
+
+.imgLlave,
+.imgManos,
+.imgHerramientas {
+    max-width: 450px;
+    height: 250px;
+    align-self: center;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+
+.imgGaleria {
+    max-width: 375px;
+    max-height: 375px;
+    border-radius: 9px;
+}
+.sectionIframe{
+    width: 100%;
+}
+
+iframe {
+    margin-top: 16px;
+    align-self: center;
+    max-width: 100%;
+}
+
+.footer {
+    grid-area: footer;
+    border: solid black 5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.footer img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    ;
+}
+
+
+@media screen and (max-width:768px) {
+    .quienesSomos {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "section1"
+            "aside1 "
+            "section2"
+            "aside2";
+    }
+}
+@media screen and (max-width:480px) {
+    .quienesSomos {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "section1"
+            "aside1 "
+            "section2"
+            "aside2";
+    }
+}
