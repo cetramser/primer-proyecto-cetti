@@ -1,0 +1,89 @@
+.logoIdear {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    padding: auto;
+    margin: auto;
+    align-self: center;
+}
+
+.navFlex {
+    border: solid 5px $bgBordes;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    align-items: center;
+}
+
+.imgHerramientas {
+    width: 450px;
+    max-width: 100%;
+    height: 250px;
+    align-self: center;
+    margin: 10px 10px;
+    border-radius: 5px;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.sectionIframe {
+    width: 100%;
+
+    iframe {
+        margin-top: 16px;
+        align-self: center;
+        max-width: 100%;
+    }
+}
+
+.carousel {
+    border: solid $bgBordes 5px;
+    border-radius: 10px;
+
+    .imgGaleria {
+        max-width: 375px;
+        max-height: 375px;
+        border-radius: 9px;
+    }
+}
+
+.gridContent {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border: solid $bgBordes 5px;
+    border-radius: 10px;
+}
+
+.imgManos {
+    width: 450px;
+    max-width: 100%;
+    height: 250px;
+    align-self: center;
+    margin: 10px 10px;
+    border-radius: 5px;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.imgLlave {
+    width: 450px;
+    max-width: 100%;
+    height: 250px;
+    align-self: center;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+
+footer img {
+    max-width: 20px;
+    max-height: 20px;
+}

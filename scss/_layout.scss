@@ -1,0 +1,45 @@
+.container {
+    display: block;
+    width: 120rem;
+    max-width: 95vw;
+    margin: 0 auto;
+}
+
+.header {
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    grid-area: header;
+}
+
+.mainFlex {
+    display: flex;
+    margin-top: 20px;
+    padding: 25px;
+    list-style: none;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border: solid $bgBordes 5px;
+    border-radius: 10px;
+}
+
+.quienesSomos {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: "section1 aside1" "section2 aside2";
+}
+
+.footer {
+    grid-area: footer;
+    border: solid $bgBordes 5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+}
