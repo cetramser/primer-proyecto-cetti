@@ -146,7 +146,7 @@ body .container .footer img {
 }
 
 @media screen and (max-width: 768px) {
-  .quienesSomos {
+  body .container .quienesSomos {
     display: flex;
     flex-direction: column;
     gap: 5px;

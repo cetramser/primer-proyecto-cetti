@@ -34,6 +34,14 @@
     gap: 20px 20px;
     grid-auto-flow: row;
     grid-template-areas: "section1 aside1" "section2 aside2";
+    @media screen and (max-width: 768px) {
+        .quienesSomos {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+    
 }
 
 .footer {
